@@ -57,3 +57,7 @@ console.log(copiedArray);
 const toArray = (...args) => args;
 
 console.log(toArray(1, 2, 3, 4, 5));
+
+//arrayFunction
+const newArray = [1, 2, 3, 5];
+console.log(newArray.map(e => e*2) );
