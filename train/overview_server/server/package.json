@@ -9,6 +9,5 @@
     "start-server": "nodemon app.js"
   },
   "author": "Max",
-  "license": "ISC",
-  "dependencies": {}
+  "license": "ISC"
 }
