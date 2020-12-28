@@ -18,7 +18,6 @@ router.get('/users', (req, res, next) => {
             res.send('Error')
         }
     })
-    
 }, async(req, res) => {
     try {
         let getAll = await modelDB.find();
@@ -66,7 +65,7 @@ router.put('/users/:id', async(req, res) => {
     } catch (error) {
         console.log(error);
     }
-})
+});
 
 router.get('/users/:id', async(req, res) => {
     try {
@@ -79,7 +78,7 @@ router.get('/users/:id', async(req, res) => {
     } catch (error) {
         console.log(error);
     }
-})
+});
 
 router.get('/login', (req, res) => {
     let username = req.query.username;
