@@ -60,8 +60,8 @@ router.put('/users/:id', async(req, res) => {
     try {
         let id = req.params.id;
         let body = req.body;
-        let updata = await modelDB.findOneAndUpdate({_id: id}, body, {new: true});
-        res.json(updata);
+        let update = await modelDB.findOneAndUpdate({_id: id}, body, {new: true});
+        res.json(update);
     } catch (error) {
         console.log(error);
     }
